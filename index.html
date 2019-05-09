@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Harjoitussivu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Calibri, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: lightgray
+  color: black;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: green;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #00808;
+  color: orange;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #0f0;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+<img src="orvokit.jpg" alt="orvokit" width="300" height="300"> {
+  background-color: #aaa;
+  width: 100%;
+  padding: 50px;
+}
+
+/* Footer */
+.footer {
+  padding: 40px;
+  text-align: center;
+  background: #0ff;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="pelargonia.jpg">
+<body>
+  <h1>Puutarhakuvia ja linkkejä</h1>
+  <p>Helin nettisivuharjoitus</p>
+</div>
+
+<div class="navbar">
+  <a href="http://www.luontoportti.com/suomi/fi/kasvit/">Kasvikuvia</a>
+  <a href="https://fi.wikipedia.org/wiki/Kasvit">Kasvien määritelmä</a>
+  <a href="https://www.luomura.com/teemasivuja/kasvit-ilmanpuhdistajina/">kasvit ilmanpuhdistajina</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Pari kuvaa omalta pihalta</h2>
+    <h5>Kevään ensimmäiset orvokit</h5>
+    <img src="orvokit1.jpg" height="300" width="300"><br><br>
+	<img src="krookus.jpg" height="150" width="150"><br>
+
+    <h3>Kuvalinkkejä</h3>
+    <p>Koivut ovat Suomen yleisimpiä lehtipuita</p><br>
+    <a href="https://fi.wikipedia.org/wiki/Koivut">
+	<img src="koivu.jpg" alt="koivu" width="300" height="300">
+	</a>
+	<p> Klikkaa kuvaa avataksesi linkin!</p>
+    <p> Tietoa perennoista.</p>
+	<a href="https://fi.wikipedia.org/wiki/Perenna">
+	<img src="perennat.jpg" alt="monivuotisia kasveja" width="250" height="250">
+	</a><br>
+	<p> Klikkaa kuvaa avataksesi linkin!</p><br>
+  </div>
+  <div class="main">
+    <h2>Puutarhassa on monenlaisia kasveja ja myös rikkaruohoja. Monia kasveja voi käyttää ravinnoksi vaikkapa kuivattuja koivunlehtiä tai nokkosta teenä .</h2>
+    <h5>Maitohorsmaa ja humalan nuoria versoja voi käyttää parsan tapaan, salaattiin käy monet kasvit kuten apila, voikukka, koivu ja poimulehti</h5>
+    <img src="voikukka.jpg" width="300" height="300">
+    <p>Tärkeää on tietää, mitä kerää, sillä osa kasveista on myrkyllisiä</p>
+    <p>Osa syötäväksi sopivista kasveista muistuttaa myrkyllisiä kasveja</p>
+    <br>
+    <h2>Kasvien käyttö sisustuksessa</h2>
+    <h5>Jotkut huonekasvit puhdistavat ilmaa ja niitä on hyvä olla kotona, tästä löytyy lisätietoa linkin kasvit ilmanpuhdistajina alta</h5>
+    <p>Tällaisia kasveja ovat esimerkiksi anopinkieli, rönsylilja ja sulkasaniainen. Jotkut kasvit voivat aiheuttaa allergisia oireita eli ennen kuin hankit kasveja ota selvää mitä ostat <p>
+    <p></p>
+    <p>Kiinalaisen sananlaskun mukaan mikään ei ole niin tärkeää kuin puutarhanhoito eikä sekään ole kovin tärkeätä</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>2019</h2>
+</div>
+
+</body>
+</html>
